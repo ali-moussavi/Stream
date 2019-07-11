@@ -1,0 +1,20 @@
+{
+  "streams": [
+    {
+      "title": "sasad",
+      "description": "dsadsa",
+      "id": 1
+    },
+    {
+      "title": "other stream",
+      "description": "heres some stream",
+      "id": 2
+    },
+    {
+      "title": "the new one",
+      "description": "i made it !",
+      "userId": "108884689703587416123",
+      "id": 3
+    }
+  ]
+}
