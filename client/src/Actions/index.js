@@ -9,6 +9,7 @@ import {
 } from './types';
 import stream from '../apis/stream';
 import StreamShow from '../components/streams/StreamShow';
+import history from '../history';
 
 export const signIn = (userId) => {
 	return { type: SIGN_IN, payload: userId };
@@ -22,6 +23,7 @@ export const createStream = (formValues) => async (dispatch, getState) => {
 	const { userId } = getState().auth;
 	const response = await stream.post('/streams', { ...formValues, userId });
 	dispatch({ type: CREATE_STREAM, payload: response.data });
+	history.push('/');
 };
 
 export const fetchStreams = () => async (dispatch) => {
